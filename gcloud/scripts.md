@@ -19,3 +19,8 @@ Login as user:
 ```
 gcloud auth login
 ```                                             
+
+Create key for service account:
+```
+gcloud iam service-accounts keys create ~/Credentials/file.json --iam-account <servaccount>@<project>.iam.gserviceaccount.com
+```
