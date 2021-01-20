@@ -7,7 +7,7 @@ gcloud iam roles list | grep pubsub
 
 Delete GCP service account:
 ```sh
-gcloud iam service-accounts delete datalake-pubsub@neuralmed-datalake-prod.iam.gserviceaccount.com
+gcloud iam service-accounts delete <servaccount>@<project>.iam.gserviceaccount.com
 ```
 
 List service account:
