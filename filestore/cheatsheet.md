@@ -3,7 +3,7 @@
 > Creating the filestore
 ```sh
 gcloud filestore instances create datalake-filestore \
-    --project=neuralmedtest1 \
+    --project=<PROJECT> \
     --location=us-west1-b \
     --tier=STANDARD \
     --file-share=name="files",capacity=1TB \
@@ -48,7 +48,7 @@ spec:
 
 > Rsync
 ```sh
-gsutil -m rsync -r gs://neuralmed-datalake-test-staging-zone/tmp/ct_testing/ /opt/filestore/
+gsutil -m rsync -r gs://bucket/tmp/ct_testing/ /opt/filestore/
 ```
 
 > Find instance IP
