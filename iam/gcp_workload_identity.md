@@ -45,6 +45,7 @@ resource "google_service_account_iam_binding" "datalake-workload-identity-users"
 ```
 
 > Create a GCP service account 
+```
 resource "kubernetes_service_account" "datalake" {
   metadata {
     name = "datalake"
@@ -59,6 +60,7 @@ resource "kubernetes_service_account" "datalake" {
     ignore_changes = [ secret ]
   }
 }
+```
 
 > Test pod
 ```yaml
